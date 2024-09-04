@@ -1,0 +1,36 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* selector de elementos */
+h2{
+    color:blueviolet;
+    font-size: 2rem;
+}
+
+/* selector de clases */
+.subtitulo{
+    color:orange;
+}
+
+.titulo{
+    color: red;
+    font-size: 20px;
+}
+
+/* selector de id */
+
+#importante a{
+    text-decoration: none;
+    display: inline;
+}
