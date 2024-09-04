@@ -1,0 +1,31 @@
+:root {
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --primario:#FFC107;
+    --secundario:#0097A7;
+    --gris: #757575;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.titulo{
+    text-align: center;
+    font-weight: 900;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal{
+    background-color: var(--secundario);
+}
