@@ -147,7 +147,7 @@ body{
 .formulario-principal{
     margin: 0 auto;
     background-color: var(--gris);
-    width: min( 60rem, 100% );
+    width: 60rem;
     padding: 2rem;
     border-radius: 1rem;
 }
