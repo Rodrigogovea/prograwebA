@@ -117,7 +117,7 @@ body{
 .servicio .icono-contenedor{
     height: 10rem;
     width: 10rem;
-    background-color: var(--primario);
+    background-color: var(--secundario);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -193,7 +193,7 @@ legend{
 }
 
 .boton{
-    background-color: var(--primario);
+    background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem 3rem;
     font-size: 2rem;
