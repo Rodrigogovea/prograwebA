@@ -8,6 +8,8 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -16,16 +18,193 @@ body{
     font-weight: 400;
 }
 
-.titulo{
-    text-align: center;
-    font-weight: 900;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
+.titulo{
+    text-align: left;
+    font-weight: 700;
+    color: var(--blanco);
+}
+.contenido-hero a{
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contenido-hero h1:hover{
+    color: var(--primario);
+}
+
+.contenido-hero h1{
+    margin-left: 2rem;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
 .contenedor {
-    width: 120rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
 .navegacion-principal{
-    background-color: var(--secundario);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.navegacion-principal a{
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 700;
+}
+
+.navegacion-principal a:hover{
+    color: var(--negro);
+    background-color: var(--primario);
+}
+
+@media (min-width:800px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.hero{
+    background-image: url(../IMG/cover.png);
+    padding: 7rem 0;
+    background-size: cover;
+    position: relative;
+}
+
+.contenido-hero h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.contenedor-principal{
+    max-width: 80rem;
+    margin: 0 auto;
+
+}
+.contenedor-principal h2{
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.servicio .icono-contenedor{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:800px){
+    .servicios{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.footer {
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.servicio p{
+    line-height: 1.5;
+}
+
+.formulario-principal{
+    margin: 0 auto;
+    background-color: var(--gris);
+    width: min( 60rem, 100% );
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario-principal h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+.formulario-principal fieldset{
+    border-style: none;   
+}
+
+legend{
+
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea{
+    height: 20rem;
+}
+.entrada-texto{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+.boton:hover{
+    color: var(--negro);
+    cursor: pointer;
 }
